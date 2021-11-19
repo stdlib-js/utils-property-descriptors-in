@@ -20,7 +20,7 @@ limitations under the License.
 
 # propertyDescriptorsIn
 
-[![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] [![dependencies][dependencies-image]][dependencies-url]
+[![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] <!-- [![dependencies][dependencies-image]][dependencies-url] -->
 
 > Return an object's own and inherited [property descriptors][@stdlib/utils/property-descriptors].
 
@@ -115,11 +115,11 @@ console.log( desc );
 
 ## See Also
 
--   [`@stdlib/utils/define-properties`][@stdlib/utils/define-properties]: define (and/or modify) object properties.
--   [`@stdlib/utils/property-descriptor-in`][@stdlib/utils/property-descriptor-in]: return a property descriptor for an object's own or inherited property.
--   [`@stdlib/utils/property-descriptors`][@stdlib/utils/property-descriptors]: return an object's own property descriptors.
--   [`@stdlib/utils/property-names-in`][@stdlib/utils/property-names-in]: return an array of an object's own and inherited enumerable and non-enumerable property names.
--   [`@stdlib/utils/property-symbols-in`][@stdlib/utils/property-symbols-in]: return an array of an object's own and inherited symbol properties.
+-   <span class="package-name">[`@stdlib/utils/define-properties`][@stdlib/utils/define-properties]</span><span class="delimiter">: </span><span class="description">define (and/or modify) object properties.</span>
+-   <span class="package-name">[`@stdlib/utils/property-descriptor-in`][@stdlib/utils/property-descriptor-in]</span><span class="delimiter">: </span><span class="description">return a property descriptor for an object's own or inherited property.</span>
+-   <span class="package-name">[`@stdlib/utils/property-descriptors`][@stdlib/utils/property-descriptors]</span><span class="delimiter">: </span><span class="description">return an object's own property descriptors.</span>
+-   <span class="package-name">[`@stdlib/utils/property-names-in`][@stdlib/utils/property-names-in]</span><span class="delimiter">: </span><span class="description">return an array of an object's own and inherited enumerable and non-enumerable property names.</span>
+-   <span class="package-name">[`@stdlib/utils/property-symbols-in`][@stdlib/utils/property-symbols-in]</span><span class="delimiter">: </span><span class="description">return an array of an object's own and inherited symbol properties.</span>
 
 </section>
 
@@ -170,8 +170,12 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/utils-property-descriptors-in/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/utils-property-descriptors-in?branch=main
 
+<!--
+
 [dependencies-image]: https://img.shields.io/david/stdlib-js/utils-property-descriptors-in.svg
 [dependencies-url]: https://david-dm.org/stdlib-js/utils-property-descriptors-in/main
+
+-->
 
 [chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
 [chat-url]: https://gitter.im/stdlib-js/stdlib/
