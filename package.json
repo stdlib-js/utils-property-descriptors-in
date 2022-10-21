@@ -38,6 +38,7 @@
   },
   "dependencies": {
     "@stdlib/assert-has-own-property": "^0.0.x",
+    "@stdlib/object-ctor": "^0.0.x",
     "@stdlib/utils-define-property": "^0.0.x",
     "@stdlib/utils-get-prototype-of": "^0.0.x",
     "@stdlib/utils-keys": "^0.0.x",
