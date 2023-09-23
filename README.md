@@ -18,20 +18,47 @@ limitations under the License.
 
 -->
 
+
+<details>
+  <summary>
+    About stdlib...
+  </summary>
+  <p>We believe in a future in which the web is a preferred environment for numerical computation. To help realize this future, we've built stdlib. stdlib is a standard library, with an emphasis on numerical and scientific computation, written in JavaScript (and C) for execution in browsers and in Node.js.</p>
+  <p>The library is fully decomposable, being architected in such a way that you can swap out and mix and match APIs and functionality to cater to your exact preferences and use cases.</p>
+  <p>When you use stdlib, you can be absolutely certain that you are using the most thorough, rigorous, well-written, studied, documented, tested, measured, and high-quality code out there.</p>
+  <p>To join us in bringing numerical computing to the web, get started by checking us out on <a href="https://github.com/stdlib-js/stdlib">GitHub</a>, and please consider <a href="https://opencollective.com/stdlib">financially supporting stdlib</a>. We greatly appreciate your continued support!</p>
+</details>
+
 # propertyDescriptorsIn
 
 [![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] <!-- [![dependencies][dependencies-image]][dependencies-url] -->
 
 > Return an object's own and inherited [property descriptors][@stdlib/utils/property-descriptors].
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/utils-property-descriptors-in
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import propertyDescriptorsIn from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-property-descriptors-in@esm/index.mjs';
+var propertyDescriptorsIn = require( '@stdlib/utils-property-descriptors-in' );
 ```
 
 #### propertyDescriptorsIn( obj )
@@ -68,14 +95,9 @@ var desc = propertyDescriptorsIn( obj );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import defineProperty from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-property@esm/index.mjs';
-import propertyDescriptorsIn from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-property-descriptors-in@esm/index.mjs';
+```javascript
+var defineProperty = require( '@stdlib/utils-define-property' );
+var propertyDescriptorsIn = require( '@stdlib/utils-property-descriptors-in' );
 
 function Foo() {
     this.beep = 'boop';
@@ -98,10 +120,6 @@ var desc = propertyDescriptorsIn( obj );
 
 console.log( desc );
 // => { 'beep': {...}, 'a': {...}, 'baz': {...}, 'foo': {...}, ... }
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -135,7 +153,7 @@ console.log( desc );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -165,8 +183,8 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/utils-property-descriptors-in.svg
 [npm-url]: https://npmjs.org/package/@stdlib/utils-property-descriptors-in
 
-[test-image]: https://github.com/stdlib-js/utils-property-descriptors-in/actions/workflows/test.yml/badge.svg?branch=main
-[test-url]: https://github.com/stdlib-js/utils-property-descriptors-in/actions/workflows/test.yml?query=branch:main
+[test-image]: https://github.com/stdlib-js/utils-property-descriptors-in/actions/workflows/test.yml/badge.svg?branch=v0.1.0
+[test-url]: https://github.com/stdlib-js/utils-property-descriptors-in/actions/workflows/test.yml?query=branch:v0.1.0
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/utils-property-descriptors-in/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/utils-property-descriptors-in?branch=main
@@ -197,15 +215,15 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/utils/define-properties]: https://github.com/stdlib-js/utils-define-properties/tree/esm
+[@stdlib/utils/define-properties]: https://github.com/stdlib-js/utils-define-properties
 
-[@stdlib/utils/property-descriptor-in]: https://github.com/stdlib-js/utils-property-descriptor-in/tree/esm
+[@stdlib/utils/property-descriptor-in]: https://github.com/stdlib-js/utils-property-descriptor-in
 
-[@stdlib/utils/property-descriptors]: https://github.com/stdlib-js/utils-property-descriptors/tree/esm
+[@stdlib/utils/property-descriptors]: https://github.com/stdlib-js/utils-property-descriptors
 
-[@stdlib/utils/property-names-in]: https://github.com/stdlib-js/utils-property-names-in/tree/esm
+[@stdlib/utils/property-names-in]: https://github.com/stdlib-js/utils-property-names-in
 
-[@stdlib/utils/property-symbols-in]: https://github.com/stdlib-js/utils-property-symbols-in/tree/esm
+[@stdlib/utils/property-symbols-in]: https://github.com/stdlib-js/utils-property-symbols-in
 
 <!-- </related-links> -->
 
