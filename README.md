@@ -35,32 +35,14 @@ limitations under the License.
 
 > Return an object's own and inherited [property descriptors][@stdlib/utils/property-descriptors].
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/utils-property-descriptors-in
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
--   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-var propertyDescriptorsIn = require( '@stdlib/utils-property-descriptors-in' );
+import propertyDescriptorsIn from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-property-descriptors-in@esm/index.mjs';
 ```
 
 #### propertyDescriptorsIn( obj )
@@ -97,9 +79,14 @@ var desc = propertyDescriptorsIn( obj );
 
 <!-- eslint no-undef: "error" -->
 
-```javascript
-var defineProperty = require( '@stdlib/utils-define-property' );
-var propertyDescriptorsIn = require( '@stdlib/utils-property-descriptors-in' );
+```html
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<script type="module">
+
+import defineProperty from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-property@esm/index.mjs';
+import propertyDescriptorsIn from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-property-descriptors-in@esm/index.mjs';
 
 function Foo() {
     this.beep = 'boop';
@@ -122,6 +109,10 @@ var desc = propertyDescriptorsIn( obj );
 
 console.log( desc );
 // => { 'beep': {...}, 'a': {...}, 'baz': {...}, 'foo': {...}, ... }
+
+</script>
+</body>
+</html>
 ```
 
 </section>
@@ -155,7 +146,7 @@ console.log( desc );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -220,15 +211,15 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/utils/define-properties]: https://github.com/stdlib-js/utils-define-properties
+[@stdlib/utils/define-properties]: https://github.com/stdlib-js/utils-define-properties/tree/esm
 
-[@stdlib/utils/property-descriptor-in]: https://github.com/stdlib-js/utils-property-descriptor-in
+[@stdlib/utils/property-descriptor-in]: https://github.com/stdlib-js/utils-property-descriptor-in/tree/esm
 
-[@stdlib/utils/property-descriptors]: https://github.com/stdlib-js/utils-property-descriptors
+[@stdlib/utils/property-descriptors]: https://github.com/stdlib-js/utils-property-descriptors/tree/esm
 
-[@stdlib/utils/property-names-in]: https://github.com/stdlib-js/utils-property-names-in
+[@stdlib/utils/property-names-in]: https://github.com/stdlib-js/utils-property-names-in/tree/esm
 
-[@stdlib/utils/property-symbols-in]: https://github.com/stdlib-js/utils-property-symbols-in
+[@stdlib/utils/property-symbols-in]: https://github.com/stdlib-js/utils-property-symbols-in/tree/esm
 
 <!-- </related-links> -->
 
