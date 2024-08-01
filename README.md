@@ -35,43 +35,32 @@ limitations under the License.
 
 > Return an object's own and inherited [property descriptors][@stdlib/utils/property-descriptors].
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/utils-property-descriptors-in
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-propertyDescriptorsIn = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-property-descriptors-in@umd/browser.js' )
-```
-The previous example will load the latest bundled code from the umd branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/utils-property-descriptors-in/tags). For example,
-
-```javascript
-propertyDescriptorsIn = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-property-descriptors-in@v0.2.2-umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var propertyDescriptorsIn = require( 'path/to/vendor/umd/utils-property-descriptors-in/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-property-descriptors-in@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.propertyDescriptorsIn;
-})();
-</script>
+var propertyDescriptorsIn = require( '@stdlib/utils-property-descriptors-in' );
 ```
 
 #### propertyDescriptorsIn( obj )
@@ -108,14 +97,9 @@ var desc = propertyDescriptorsIn( obj );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-property@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-property-descriptors-in@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var defineProperty = require( '@stdlib/utils-define-property' );
+var propertyDescriptorsIn = require( '@stdlib/utils-property-descriptors-in' );
 
 function Foo() {
     this.beep = 'boop';
@@ -138,11 +122,6 @@ var desc = propertyDescriptorsIn( obj );
 
 console.log( desc );
 // => { 'beep': {...}, 'a': {...}, 'baz': {...}, 'foo': {...}, ... }
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -206,8 +185,8 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/utils-property-descriptors-in.svg
 [npm-url]: https://npmjs.org/package/@stdlib/utils-property-descriptors-in
 
-[test-image]: https://github.com/stdlib-js/utils-property-descriptors-in/actions/workflows/test.yml/badge.svg?branch=v0.2.2
-[test-url]: https://github.com/stdlib-js/utils-property-descriptors-in/actions/workflows/test.yml?query=branch:v0.2.2
+[test-image]: https://github.com/stdlib-js/utils-property-descriptors-in/actions/workflows/test.yml/badge.svg?branch=main
+[test-url]: https://github.com/stdlib-js/utils-property-descriptors-in/actions/workflows/test.yml?query=branch:main
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/utils-property-descriptors-in/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/utils-property-descriptors-in?branch=main
@@ -241,15 +220,15 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/utils/define-properties]: https://github.com/stdlib-js/utils-define-properties/tree/umd
+[@stdlib/utils/define-properties]: https://github.com/stdlib-js/utils-define-properties
 
-[@stdlib/utils/property-descriptor-in]: https://github.com/stdlib-js/utils-property-descriptor-in/tree/umd
+[@stdlib/utils/property-descriptor-in]: https://github.com/stdlib-js/utils-property-descriptor-in
 
-[@stdlib/utils/property-descriptors]: https://github.com/stdlib-js/utils-property-descriptors/tree/umd
+[@stdlib/utils/property-descriptors]: https://github.com/stdlib-js/utils-property-descriptors
 
-[@stdlib/utils/property-names-in]: https://github.com/stdlib-js/utils-property-names-in/tree/umd
+[@stdlib/utils/property-names-in]: https://github.com/stdlib-js/utils-property-names-in
 
-[@stdlib/utils/property-symbols-in]: https://github.com/stdlib-js/utils-property-symbols-in/tree/umd
+[@stdlib/utils/property-symbols-in]: https://github.com/stdlib-js/utils-property-symbols-in
 
 <!-- </related-links> -->
 
